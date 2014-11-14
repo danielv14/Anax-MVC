@@ -1,1 +1,1 @@
-"Daniel pluggar kurspaketet på distans och läser nu den tredje kurser phpmvc."
+"Daniel pluggar kurspaketet på distans och läser nu den tredje kursen phpmvc."
