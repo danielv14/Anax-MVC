@@ -3,6 +3,7 @@
  */
 
 @import url(figure.css);
+@import url(comments.css);
 
 html {
 	background:url(../img/background/paper.png);
@@ -31,6 +32,7 @@ h1 {
   padding: 10px;
   	border-radius: 5px;
 }
+
 
 
 /**

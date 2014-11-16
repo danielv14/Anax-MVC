@@ -19,10 +19,16 @@ return [
         ],
  
         // This is a menu item
-        'test'  => [
+        'report'  => [
             'text'  => 'Redovisningar',
             'url'   => 'redovisning',
             'title' => 'Redovisningar',
+            ],
+            
+        'comments'  => [
+            'text'  => 'Kommentarer',
+            'url'   => 'comments',
+            'title' => 'Kommentarer',
 
             /* Here we add the submenu, with some menu items, as part of a existing menu item
             'submenu' => [
