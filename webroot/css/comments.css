@@ -1,0 +1,75 @@
+.Headercomment{ 
+
+width: 80%; 
+font-size: 14px; 
+color: #de6464;
+margin-left: 5px;
+
+} 
+
+
+
+
+/* Style for the individual comments */
+.Contentcomment { 
+
+margin-left: 5%; 
+float: left; 
+font-size: 16px; 
+width: 75%;
+
+} 
+
+/* Style for field below actual comment*/
+.ContentBelowcomment { 
+
+float: left; 
+font-size: 14px; 
+width: 75%;
+color: #de6464;
+margin-left: 5px;
+
+} 
+
+.ContentBelowcomment a {
+color: #de6464;
+}
+
+.ContentBelowcomment a:hover {
+	color: grey;
+}
+
+
+
+/* Style for comment buttons */
+.Editcomment { 
+
+float: left; 
+width: 15%; 
+
+}
+
+
+/* Style for the enire comment section (excluding adding comments) */
+.Rowcomment { 
+
+overflow: auto; 
+margin-bottom: 3%;
+-webkit-box-shadow: 2px 2px 4px 0px rgba(50, 50, 50, 0.50);
+-moz-box-shadow:    2px 2px 4px 0px rgba(50, 50, 50, 0.50);
+box-shadow:         2px 2px 4px 0px rgba(50, 50, 50, 0.50);
+} 
+
+
+/**
+* Layout for the comment-field
+*/
+div.comment-form fieldset {
+	border: 0;
+}
+
+div.comment-form textarea {
+	height: 50px;
+	width: 300px;
+}
+
