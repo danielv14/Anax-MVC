@@ -58,6 +58,7 @@ return [
         'title_append' => ' | MVC',
 
         // Stylesheets
+        //'stylesheets' => ['css/style.css', 'css/navbar.css'],
         'stylesheets' => ['css/style.css', 'css/navbar.css'],
 
         // Inline style

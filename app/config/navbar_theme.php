@@ -11,30 +11,25 @@ return [
     // Here comes the menu strcture
     'items' => [
 
-        // This is a menu item
+    // This is a menu item
         'home'  => [
-            'text'  => 'Hem',
+            'text'  => '<i class="fa fa-home"></i> Hem',
             'url'   => '',
             'title' => 'Hem'
         ],
+
  
         // This is a menu item
-        'report'  => [
-            'text'  => 'Redovisningar',
-            'url'   => 'redovisning',
-            'title' => 'Redovisningar',
+        'regioner'  => [
+            'text'  => '<i class="fa fa-newspaper-o"></i> Regioner',
+            'url'   => 'theme.php/regioner',
+            'title' => 'Regioner',
             ],
             
-         'theme'  => [
-            'text'  => 'Mitt Tema',
-            'url'   => 'theme.php',
-            'title' => 'Mitt Tema',
-            ],
-
             
-        'comments'  => [
-            'text'  => 'Kommentarer',
-            'url'   => 'comments',
+        'typography'  => [
+            'text'  => '<i class="fa fa-sort-alpha-asc"></i> Typografi',
+            'url'   => 'theme.php/typography',
             'title' => 'Kommentarer',
 
             /* Here we add the submenu, with some menu items, as part of a existing menu item
@@ -70,10 +65,12 @@ return [
  
         // This is a menu item
         'about' => [
-            'text'  =>'Source',
-            'url'   => 'source',
-            'title' => 'Källkod'
+            'text'  =>'<i class="fa fa-font"></i> Font Awesome',
+            'url'   => 'theme.php/font-awesome',
+            'title' => 'Font Awesome'
         ],
+        
+        
     ],
  
     // Callback tracing the current selected menu item base on scriptname

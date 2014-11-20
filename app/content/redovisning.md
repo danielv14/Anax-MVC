@@ -1,6 +1,41 @@
 Redovisning
 ====================================
 
+Kmom03: Bygg ett eget tema
+--------------------------------------
+
+### Reflektioner
+Då var det tredje momentet klart och det var ett intressant och lärorikt sådant. Har tidigare inte kommit i kontakt med mycket av det som togs upp i momentet så det var mycket nytt att ta in. Men med guiden till hands gick det ändå bra att arbeta sig igenom momentet. 
+Det vart många nya filer att hålla redo på, kanske främst .less filer och jag tycker att det ibland kan bli lite överväldigande med så många olika filer, men det är väl en vanesak kanske.    
+
+Hade lite problem när jag skulle i guiden när jag skulle flytta CSS-kod till att bli till LESS. Fick inte min style att ladda överhuvudtaget. Provade att kommentera bort varje import enskilt i min style.less för att se i vilken fil problemet låg. Visade sig att det var min structure.less som bråkade. Det första som slog mig var att min font kanske ställde till problemet, vilket stämde. Efter att jag bytt font laddades all style in igen. Detta problemet uppstod dock innan all style för typografi flyttades över till en separat .less-fil.
+Ett annat problem uppstod när jag arbetade med sidan för Font Awesome då mina ikoner inte ville visas. Jag hade helt enkelt bara skrivit lite fel i variabeln till font-mappen.
+
+### Vad tycker du om CSS-ramverk i allmänhet och vilka tidigare erfarenheter har du av dem?
+Jag har minimal erfarenhet av CSS-ramverk och om jag inte missminner mig använde jag ett CSS-ramverk någon gång under en gymnasiekurs jag hade i webbutveckling. Det kan dock bara ha varit en simpel CSS template också, jag minns inte riktigt. I varje fall har jag inte varit i kontakt med de mer avancerade ramverken.
+Tycker rent allmänt att CSS-ramverk är väldigt smidigt. Mycket tid kan sparas genom att använda ett sådant, även om det är en inlärningskurva när man börjar använda ett ramverk.  Kanske inte speciellt smart att direkt hoppa på ett CSS-ramverk utan att kunna grunden i CSS dock.
+
+### Vad tycker du om LESS, lessphp och Semantic.gs?
+LESS gör det verkligen mer smidigt att arbeta med style. Äntligen kan man sätta variabler för exempelvis färger och mått och på så vis bara ändra färger i deklarationen av variabeln. Har tidigare bara sett någon tutorial-video om hur man skriver mer enklare kod med LESS. Tyckte då att det verkade väldigt bra och intressant och det var kul att få prova på det i ett kursmoment.
+Lessphp var ett smidigt sätt att kompilera less-kod men jag kan inte yttra mig om hur lessphp står sig mot andra metoder att just kompilera less-kod. Semantic.gs var även det ett väldigt smidigt verktyg för att få till en mer korrekt layout. Kan ibland vara lite svårt att få till en bra och korrekt layout och jag har tidigare haft lite problem med float och dylikt vissa stunder. Semantic sköter det bra och på ett logiskt sätt. Väldigt bra att det är responsivt också. 
+
+### Vad tycker du om gridbaserad layout, vertikalt och horisontellt?
+Gridbaserad layout hjälper till och gör att en sida struktureras på korrekt sätt. Det är även till stor nytta när man ska anpassa en sida för mindre skärmar i form av exempelvis smartphones och surfplattor. Att kombinera de vertikal och horisontel gridbaserad layout gör att en sida kan se mer korrekt och strukturerad ut.
+Det var intressant att läsa i en av artiklarna om den ”perfekta” storleken på font och om det magiska numret.
+
+
+### Har du några kommentarer om Font Awesome, Bootstrap, Normalize?
+Har tidigare inte använt mig av Font Awesome, men har vetat om det. Tycker det är ett väldigt bra verktyg för att använda sig av ikoner på en sida. Att dom är skalbara är också väldigt bra för att inte tala om hur många ikoner det finns att välja bland.
+Bootstrap har jag också hört talas om tidigare och tycker att det verkar som ett väldigt kraftfullt verktyg att använda sig av. Det är väl en inkörningsperiod med Bootstrap som med mycket annat men jag skulle vilja försöka använda mig av det mer i framtiden. Likväl Font Awesome.
+
+### Beskriv ditt tema, hur tänkte du när du gjorde det, gjorde du några utsvävningar?
+Jag gjorde inte direkt några utsvävningar från de tema som presenteras i guiden. Temat har 3 stycken brytpunkter beroende på hur stor skärmytan är och grid-bakgrunden syns när man hovrar med musen över wrappern. Skulle vilja ha haft min navbar responsiv med en "hamburger menu” men det blev inte att jag försökte mig på det för att det var lite ont om tid.
+
+### Antog du utmaningen som extra uppgift?
+Det gjorde jag inte.
+
+<hr>
+
 Kmom02: Kontroller och modeller
 ------------------------------------
 
