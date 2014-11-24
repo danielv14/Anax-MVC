@@ -1,6 +1,37 @@
 Redovisning
 ====================================
 
+Kmom04: Databasdrivna modeller
+-----------------------------------------
+###Reflektioner
+Det här korsmomentet har känts som det svåraste och mest omfattande hittills och det tog verkligen mycket längre tid än vad som var utsatt. Fastnade både här och där med allt möjligt. Komplexiteten av Anax-MVC är inget jag riktigt än vant mig med, även om jag blir mer och mer bekväm med strukturen för varje kursmoment. 
+Guiderna för denna kursen är inte lika utförliga som kurspaketets tidigare kurser vilket kan vara lite tufft ibland då man inte vet alla gånger vart koden hör hemma. Men det är väl kanske meningen att vi ska tänka lite mer själva och inte blint följa guiden. 
+
+Hade stora problem att använda mig av composer för att installera det som behövdes för övningarna. Antecknade inte händelseförloppet speciellt noggrant då det verkligen var problem på problem och jag var ganska stressad och trodde inte att jag skulle hinna klart med uppgiften i tid. 
+Men en del problem med composer handlade om att jag inte hade gjort en composer update och fick felmeddelanden om att det inte gick att hitta det namespace som anropades. Satt fast med det problemet väldigt länge och det var bara ett hinder av många under det här momentets gång. Skulle vilja säga att det mesta av det här momentet handlade om felsökning.
+
+Fick felmeddelanden om att ”header redirect” inte fungerade som det skulle heller och vände mig efter ett tags felsökande utan resultat till forumet och läste om att det skulle kunna vara att verbose var påslaget i config-mysql filen som låg bakom problemet. Mycket riktigt var det så.
+
+###Vad tycker du om formulärhantering som visas i kursmomentet?
+Tycker det var väldigt smidigt när jag väl fick det att funka som det ska. Det tog lite tid i början att implementera det men när det väl var på plats gick det bra. Smidigt med validering av formulär även det kanske kan skötas med lite mer ”enkla” knep.
+
+###Vad tycker du om databashanteringen som visas, föredrar du kanske traditionell SQL?
+Även databashanteringen var smidig när den väl implementerades korrekt. Hade lite problem i början att få det att fungera men tillslut löste det sig. Jag är ju mer van med traditionella SQL queries så det var ju såklart lite ovant att hantera det på ett annat sätt. Det kändes väldigt smidigt med databashanteringen som introducerades i detta kursmoment även om det som sagt var ovant att inte skriva traditionell SQL.
+
+###Gjorde du några vägval, eller extra saker, när du utvecklade basklassen för modeller?
+Gjorde inga extra saker direkt då jag hade det tillräckligt svårt att hänga med i guiderna och få till grundfunktionaliteten. 
+
+###Beskriv vilka vägval du gjorde och hur du valde att implementera kommentarer i databasen
+Från början hade jag en egen fil som skötte visningen av kommentarer samt funktionen att lägga till nya kommentarer. Tyckte det var lättare att isolera den biten under tiden som jag jobbade med att få till kommentarsystemet kopplat till en databas. Efter att jag var nöjd med funktionaliteten flyttade jag över det till min index fil.
+Annars gjorde jag ungefär som i uppgiften med användare. En tom model som ”extendar" CDatabaseModel och sen använder jag mig av CommentDbController på samma sätt som UsersController används.
+
+###Gjorde du extrauppgiften?
+Det gjorde jag inte.
+
+<hr>
+
+
+
 Kmom03: Bygg ett eget tema
 --------------------------------------
 

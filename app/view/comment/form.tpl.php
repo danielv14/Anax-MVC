@@ -1,19 +1,19 @@
-<div class='comment-form'> 
-    <form method=post> 
-        <input type=hidden name="redirect" value="<?=$this->url->create($this->di->request->extractRoute())?>"> 
-        <fieldset> 
-        <legend>Skriv en ny kommentar</legend> 
-        <p><label><textarea name='content' placeholder="Kommentar"><?=$content?></textarea></label></p> 
-        <p><label><input type='text' name='name' placeholder="Ditt namn..." value='<?=$name?>'/></label></p> 
-        <p><label><input type='text' name='web' placeholder="Din hemsida.." value='<?=$web?>'/></label></p> 
-        <p><label><input type='text' name='mail' placeholder="Din email..." value='<?=$mail?>'/></label></p> 
-        <p class=buttons> 
-             <input type=hidden name="key" value="<?=$this->di->request->getCurrentUrl();?>"> 
-            <input type='submit' name='doCreate' value='Skicka' onClick="this.form.action = '<?="comment/add";?>'"/> 
-            <input type='reset' value='Återställ'/> 
-            <input type='submit' name='doRemoveAll' value='Ta bort alla' onClick="this.form.action = '<?=$this->url->create('comment/remove-all')?>'"/> 
-        </p> 
-        <output><?=$output?></output> 
-        </fieldset> 
-    </form> 
+<div class='comment-form'>
+    <form method=post>
+        <input type=hidden name="redirect" value="<?= $this->url->create($key) ?>">
+        <input type=hidden name="pageKey" value="<?= $key ?>">
+        <fieldset>
+            <legend>Leave a comment</legend>
+            <label>Comment:<br><textarea name='content'><?= $content ?></textarea></label><br>
+            <label>Name:<br><input type='text' name='name' value='<?= $name ?>'/></label><br>
+            <label>Homepage:<br><input type='text' name='web' value='<?= $web ?>'/></label><br>
+            <label>Email:<br><input type='text' name='mail' value='<?= $mail ?>'/></label>
+            <div class=buttons>
+                <input type='submit' name='doCreate' value='Comment' onClick="this.form.action = '<?= $this->url->create('comment/add') ?>'"/>
+                <input type='reset' value='Reset'/>
+                <input type='submit' name='doRemoveAll' value='Remove all' onClick="this.form.action = '<?= $this->url->create('comment/remove-all') ?>'"/>
+            </div>
+            <output><?= $output ?></output>
+        </fieldset>
+    </form>
 </div> 

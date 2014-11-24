@@ -4,7 +4,6 @@
  */
 #navbar {
   margin-bottom: 44px;
-  background: black;
 }
 
 .navbar {
@@ -35,8 +34,8 @@
 }
 
 .navbar li:hover {
-  color: #666; 
-  border-color: #666;
+  color: #777; 
+  border-color: #777;
   background-color: #ddd;
 } 
  
@@ -66,8 +65,8 @@
 }
  
 .navbar li li:hover {
-  color: #666; 
-  border-color: #666;
+  color: #777; 
+  border-color: #777;
 }
 
 .navbar li li.selected {

@@ -67,6 +67,53 @@ return [
             ],
             */
         ],
+
+        'list'  => [
+            'text'  => 'Användare',
+            'url'   => 'Users/list',
+            'title' => 'Lista alla',
+            
+            'submenu' => [
+                'items' => [
+                                            
+                     'active' => [
+			            'text' => 'Aktiva',
+			            'url' => 'Users/active',
+			            'title' => 'Aktiva användare'
+			            ],
+			            
+			         'deactive' => [
+			            'text' => 'Inaktiva',
+			            'url' => 'Users/inactive',
+			            'title' => 'Inaktiva användare'
+			            ],
+			            
+			         'trash'  => [
+			            'text'  => 'Papperskorgen',   
+			            'url'   => 'users/trash',   
+			            'title' => 'Soft-deleted',
+						],
+						
+					'add' => [
+			            'text'  =>'Lägg till', 
+			            'url'   =>'users/add',  
+			            'title' => 'Lägg till användare'
+			            ],
+			         'setup' => [
+                        'text'      => 'Återställ',
+                        'url'       => 'setup',
+                        'title'     => 'Setup'
+                        ],
+
+
+
+
+                ],
+            ],
+            
+            
+        ],
+
  
         // This is a menu item
         'about' => [

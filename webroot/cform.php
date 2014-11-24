@@ -3,32 +3,24 @@
  * This is a Anax frontcontroller.
  *
  */
-
 // Get environment & autoloader.
-require __DIR__.'/config.php';
-
+require __DIR__.'/config_with_app.php';
 // Create services and inject into the app. 
 $di  = new \Anax\DI\CDIFactoryDefault();
-
 $di->set('form', '\Mos\HTMLForm\CForm');
-
 $di->set('FormController', function () use ($di) {
     $controller = new \Anax\HTMLForm\FormController();
     $controller->setDI($di);
     return $controller;
 });
-
 $di->set('FormSmallController', function () use ($di) {
     $controller = new \Anax\HTMLForm\FormSmallController();
     $controller->setDI($di);
     return $controller;
 });
-
 $app = new \Anax\MVC\CApplicationBasic($di);
-
 // Home route
 $app->router->add('', function () use ($app) {
-
     $app->theme->setTitle("Testing CForm with Anax");
     $app->views->add('default/page', [
         'title' => "Try out a form using CForm",
@@ -48,16 +40,10 @@ $app->router->add('', function () use ($app) {
             ],
         ],
     ]);
-
 });
-
-
-
 // Test form route
 $app->router->add('test1', function () use ($app) {
-
     $app->session(); // Will load the session service which also starts the session
-
     $form = $app->form->create([], [
         'name' => [
             'type'        => 'text',
@@ -94,28 +80,22 @@ $app->router->add('test1', function () use ($app) {
             }
         ],
     ]);
-
 /*
     // Check the status of the form
     $status = $form->check();
-
     if ($status === true) {
-
         // What to do if the form was submitted?
         $form->AddOUtput("<p><i>Form was submitted and the callback method returned true.</i></p>");
         //header("Location: " . $_SERVER['PHP_SELF']);
         $app->redirectTo();
-
     } else if ($status === false) {
     
         // What to do when form could not be processed?
         $form->AddOutput("<p><i>Form was submitted and the Check() method returned false.</i></p>");
         //header("Location: " . $_SERVER['PHP_SELF']);
         $app->redirectTo();
-
     }
 */
-
 /*
     // Check the status of the form
     $form->check(
@@ -124,7 +104,6 @@ $app->router->add('test1', function () use ($app) {
             // What to do if the form was submitted?
             $form->AddOUtput("<p><i>Form was submitted and the callback method returned true.</i></p>");
             $app->redirectTo();
-
         },
         function ($form) use ($app) {
     
@@ -135,36 +114,25 @@ $app->router->add('test1', function () use ($app) {
         }
     );
 */
-
-
     $callbackSuccess = function ($form) use ($app) {
         // What to do if the form was submitted?
         $form->AddOUtput("<p><i>Form was submitted and the callback method returned true.</i></p>");
         $app->redirectTo();
     };
-
     $callbackFail = function ($form) use ($app) {
             // What to do when form could not be processed?
             $form->AddOutput("<p><i>Form was submitted and the Check() method returned false.</i></p>");
             $app->redirectTo();
     };
-
-
     // Check the status of the form
     $form->check($callbackSuccess, $callbackFail);
-
-
     $app->theme->setTitle("Testing CForm with Anax");
     $app->views->add('default/page', [
         'title' => "Try out a form using CForm",
         'content' => $form->getHTML()
     ]);
-
 });
-
-
 // Check for matching routes and dispatch to controller/handler of route
 $app->router->handle();
-
 // Render the page
 $app->theme->render();

@@ -15,12 +15,26 @@ body {
   color: #333;
   font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
   overflow-y: scroll;
+  line-height: 1.4;
 }
 
 h1 {
   font-size: 2.2em;
 }
 
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#de6464;
+	text-decoration: underline;
+}
+
+span.bold {
+  font-weight: bold;
+}
 
 /**
  * Layout of the main page elements 
