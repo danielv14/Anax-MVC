@@ -35,6 +35,12 @@ $di->setShared('db', function() {
     return $db;
 });
 
+$di->set('Flash', function() use ($di) {
+    $flash = new \Anax\FlashMessage\CFlashMessage();
+    $flash->setDI($di);
+    return $flash;
+});
+
 $di->set('form', '\Mos\HTMLForm\CForm');
 
 // Starts/injects the Controller for the Comment model
@@ -59,6 +65,8 @@ $app->navbar->configure(ANAX_APP_PATH . 'config/navbar_me.php');
 
 $app->theme->addStylesheet('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 $app->theme->addStylesheet('css/databasecomments.css');
+$app->theme->addStylesheet('css/flashmessage.css');
+
 
 
 
@@ -171,8 +179,24 @@ $app->router->add('setup', function() use ($app) {
 
 }); 
 
+// Flash message route
+$app->router->add('flash', function() use ($app) {
 
+	$app->theme->setTitle("Flash messages");
 
+    $app->Flash->setMessage("success");
+    $app->Flash->setMessage("success", "Adding non-standard text");
+
+    $app->Flash->setMessage("error");
+    $app->Flash->setMessage("error", "Adding non-standard text");
+
+    
+    $msg = $app->Flash->getMessage();
+    $app->views->add('me/flash', [
+        'msg' => $msg
+        ]);
+ 
+});
 
 
 // Source route 

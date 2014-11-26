@@ -147,10 +147,13 @@ class UsersController implements \Anax\DI\IInjectionAware {
                 // Get data from and and unset the session variable
                 $acronym = $_SESSION['form-save']['acronym']['value'];
                 session_unset($_SESSION['form-save']);
+                
+                
 
                 // Route to prefered controller function
                 $url = $this->url->create('users/add/' . $acronym);
                 $this->response->redirect($url);
+                
              
             } else if ($status === false) {     
 

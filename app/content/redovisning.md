@@ -1,6 +1,30 @@
 Redovisning
 ====================================
 
+Kmom05: Bygg ut ramverket
+------------------------------------------
+###Reflektioner
+Det var skönt att det här momentet inte var lika omfattande eller tidskrävande som det föregående momentet. I det stora hela har det gått väldigt bra och då jag under kursens gång har använt mig av GitHub redan för mitt Anax-MVC var det inte speciellt svårt att få till len separat repository för modulen. Tycker versionshantering i form av GitHub är guld värd fast jag är ensam utvecklare på mitt Anax-MVC repository. Kan tänka mig hur smidigt det är att ha GitHub som tillgång när man är flera utvecklare på samma projekt.
+Det var intressant att läsa artiklarna om mot-reaktionen till de mer avancerade ramverken och se på ramverken från den ”andra sidan” där man eftersträvar enkelhet osv.     
+
+För tillfället använder jag mig av programmet GitHub till Mac. Tycker att det är lite lättare att jobba med ett GUI än att använda mig av terminalen när jag commitar och pushar till mina repos. Har dock tidigare haft lite problem med det programmet då jag inte riktigt förstått sync-funktionen. När jag har lagt till kod i Anax-MVC och sen försökt att commita och synca koden till GitHub har min lokala kod återställts till den senaste pushen som ligger uppe på GitHub. Jag har tidigare inte fått någon kläm på programmets sync-funktion och den vanliga push-funktionen förrän detta momentet då jag kollade upp F.A.Q'n för programmet som jag insåg hur jag skulle göra för att pusha min kod. Tidigare har jag under kursens gång använt mig av min texteditors inbyggda GitHub funktioner men jag tror att jag kommer använda mig av GitHub för Mac hädanefter.
+
+###Var hittade du inspiration till ditt val av modul och var hittade du kodbasen som du använde?
+Jag hade inte direkt någon specifik idé jag ville förverkliga när jag väl började med uppgiften utan det stod helt enkelt mellan de exempel som fanns listade. Var först inne på att att skapa en modul som hämtar RSS-flöde men jag landade tillslut på modulen som visar flash-meddelanden. Tyckte att den modulen verkade lagom svår och ville inte direkt ta mig vatten över huvudet.
+
+###Hur gick det att utveckla modulen och integrera i ditt ramverk?
+Det gick bra att utveckla Flashmodulen och mycket kunde jag stödja mig på de moduler som redan finns i Anax-MVC för att få det att fungera. Hämtade mycket tips från CDatabase och CForm om hur jag skulle gå tillväga.
+###Hur gick det att publicera paketet på Packagist?
+Det gick förvånansvärt lätt att publicera paketet på Packagist faktiskt. Fick först klagomål om att ett namn inte bör innehålla stor bokstav så jag ändrade detta i min composer.json och således gick det att lägga upp paketet. Det var väldigt smidigt att man kunde koppla samman GitHub och Packagist så att paketet kan reflektera eventuella förändringar i kod man pushar till GitHub.
+ 
+###Hur gick det att skriva dokumentationen och testa att modulen fungerar tillsammans med Anax-MVC?
+Det gick bra att skriva dokumentationen, tittade mycket på hur dokumentationen gick till på Mos olika repon. Dock måste lite filer flyttas om för att få modulen att fungera men det är dokumenterar hur man gör detta i README.md 
+
+###Gjorde du extrauppgiften?
+Det gjorde jag inte.
+
+<hr>
+
 Kmom04: Databasdrivna modeller
 -----------------------------------------
 ###Reflektioner

@@ -113,6 +113,13 @@ return [
             
             
         ],
+        
+         // This is a menu item
+        'flash' => [
+            'text'  =>'Flash meddelanden',
+            'url'   => 'flash',
+            'title' => 'Flashmeddelanden'
+        ],
 
  
         // This is a menu item
