@@ -114,12 +114,14 @@ return [
             
         ],
         
+                
          // This is a menu item
-        'flash' => [
-            'text'  =>'Flash meddelanden',
-            'url'   => 'flash',
-            'title' => 'Flashmeddelanden'
+        'rss' => [
+            'text'  =>'Rss',
+            'url'   => 'rss',
+            'title' => 'RSS'
         ],
+
 
  
         // This is a menu item

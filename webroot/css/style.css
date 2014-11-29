@@ -81,6 +81,18 @@ span.bold {
   min-height: 20em;
 }
 
+/* Style for rss */
+div.rss {
+	width: 700px;
+	
+}
+
+.smaller{
+	font-size: smaller;
+}
+
+
+
 
 /**
  * Layout for footer

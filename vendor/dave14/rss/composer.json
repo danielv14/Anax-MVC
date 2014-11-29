@@ -1,0 +1,20 @@
+{
+"name": "dave14/rssfeed",
+"type": "library",
+"description": "Simple Pie rss wrapper",
+"keywords": ["rss"],
+"homepage": "https://github.com/danielv14/rss",
+"license": "MIT",
+"authors": [
+{
+"name": "Daniel",
+"role": "Developer"
+}
+],
+"require": {
+"php": ">=5.4"
+},
+"autoload": {
+"psr-4": { "Dave14\\": "src/" }
+}
+}

@@ -179,25 +179,22 @@ $app->router->add('setup', function() use ($app) {
 
 }); 
 
-// Flash message route
-$app->router->add('flash', function() use ($app) {
 
-	$app->theme->setTitle("Flash messages");
 
-    $app->Flash->setMessage("success");
-    $app->Flash->setMessage("success", "Adding non-standard text");
+$app->router->add('rss', function() use ($app) {
 
-    $app->Flash->setMessage("error");
-    $app->Flash->setMessage("error", "Adding non-standard text");
-
+    require '../vendor/dave14/rss/src/library/CRSS.php';
+    $feed = new \Dave14\library\CRSS([
+            'http://feeds.reuters.com/news/reutersmedia'
+    ]);
     
-    $msg = $app->Flash->getMessage();
-    $app->views->add('me/flash', [
-        'msg' => $msg
-        ]);
- 
-});
+    $app->theme->setTitle("RSS");    
+    $app->views->add('default/page', [
+        'title' => 'RSS',        
+        'content' => $feed->printFeed(),
+    ]);
 
+});
 
 // Source route 
 $app->router->add('source', function() use ($app) {
