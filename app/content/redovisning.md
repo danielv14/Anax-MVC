@@ -19,7 +19,7 @@ Det gick bra att utveckla modulen och mycket kunde jag stödja mig på de module
 Det gick förvånansvärt lätt att publicera paketet på Packagist faktiskt. Fick först klagomål om att ett namn inte bör innehålla stor bokstav så jag ändrade detta i min composer.json och således gick det att lägga upp paketet. Det var väldigt smidigt att man kunde koppla samman GitHub och Packagist så att paketet kan reflektera eventuella förändringar i kod man pushar till GitHub.
  
 ###Hur gick det att skriva dokumentationen och testa att modulen fungerar tillsammans med Anax-MVC?
-Det gick bra att skriva dokumentationen, tittade mycket på hur dokumentationen gick till på Mos olika repon. Dock måste lite filer flyttas om för att få modulen att fungera men det är dokumenterar hur man gör detta i README.md 
+Det gick bra att skriva dokumentationen, tittade mycket på hur dokumentationen gick till på Mos olika repon.
 
 ###Gjorde du extrauppgiften?
 Det gjorde jag inte.
