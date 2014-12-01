@@ -1,6 +1,35 @@
 Redovisning
 ====================================
 
+Kmom06: Verktyg och CI
+---------------------------------------
+
+###Reflektioner
+Då var det sjätte och sista momentet innan projektet drar igång klart. Det har gått både bra och dåligt måste jag säga med kanske mest hinder i början av kursmomentets gång.
+Bråkade som vanligt lite med terminalen när jag jobbade igenom guiden för att installera och testa att phpunit fungerade. Hade först lite problem med att lista vart jag ville lägga phpunit.phar och jag hade även problem att få kommandot ”php phpunit —version” att gå igenom. Efter ett tag insåg jag ju att jag borde ha matat terminalen med ”php phpunit.phar —version” istället. Kanske borde ha insett det på en gång men lite krångel hör ju momenten till. 
+
+###Var du bekant med några av dessa tekniker innan du började med kursmomentet?
+Har tidigare varken varit bekant eller använt några av teknikerna som introducerades i kursmomentet. Det var helt klart lärorikt att få prova på. CI och unit-test är helt nya begrepp för mig och det var mycket nytt att ta in. 
+
+###Hur gick det att göra testfall med PHPUnit?
+Det var lite svårt att komma igång med att göra testfall. Tycker att det här kursmomentet, precis som hela denna kurs egentligen, har haft en brant inlärningskurva. Många frågetecken och hinder när jag väl börjat men alltefter som frågetecknen rätas ut går det successivt bättre.
+
+###Hur gick det att integrera med Travis?
+Det gick väldigt smärtfritt att komma igång med Travis då det så smidigt kunde kopplas ihop direkt med GitHub. I många anseenden känns GitHub som en centralstation som grenar ut sig till exempelvis Travis och det är väldigt enkelt att få dem att komma överens och arbeta ihop. Artikeln om Travis och Scrutinizer var bra att ha tillhands och med hjälp av den fanns det inte utrymme för speciellt många frågetecken. 
+
+###Hur gick det att integrera med Scrutinizer?
+Precis som med Travis gick det väldigt smidigt att integrera och testa med hjälp av Scrutinizer. På något vis var det lite enklare att jobba med Scrutinizer, kanske var verktyget mer intuitivt eller något men Scrutinizer tilltalade mig mer. Det var väldigt bra att koden studerades ”med lupp” och att man kunde se vart alla buggar var samt att man fick en förklarande text till varför, istället för att bara påvisa dessa buggar. Tyvärr verkar det som att SimplePie hade väldigt många buggar i sig.
+
+###Hur känns det att jobba med dessa verktyg, krångligt, bekvämt, tryggt? Kan du tänka dig att fortsätta använda dem?
+Som tidigare sagt var det lite av en brant uppförsbacke för mig att väl börja använda dessa verktyg men såhär med kursmomentet i ryggen ser jag verkligen fördelarna med dem. Jag vet inte hur vanligt det är att man använder sig av tester såhär ute i ”världen”. Många kanske tycker att det är för tidskrävande och inte riktigt bryr sig om det. SimplePie har ju exemplevis en hel del buggar och problem men är trots det ändå i bruk. Det var väldigt smidigt att nya tester kördes igånd automatiskt efter att man hade pushat något till GitHub.
+          
+Är sedan tidigare endast bekant med GitHub som jag började använda vid denna kursstart och har lärt mig att uppskatta det verktyget.I början tyckte jag att det var krångligt och svårt med GitHub men har som sagt vant mig med det vid det här laget. Visserligen finns det ju mer att lära sig nr det gäller GitHub men ändå. Det är väl kanske lite samma sak med verktygen som introducerades i detta kursmoment. Ju mer man använder dem ju enklare blir dem. Jag tror att det är väldigt nyttigt att få ett par ”nya ögon” som studera koden och kommer med synpunkter då en själv kanske har stirrat sig blind för länge.
+
+###Gjorde du extrauppgiten?
+Det gjorde jag inte.
+
+<hr>
+
 Kmom05: Bygg ut ramverket
 ------------------------------------------
 ###Reflektioner
