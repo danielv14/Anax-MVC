@@ -35,11 +35,7 @@ $di->setShared('db', function() {
     return $db;
 });
 
-$di->set('Flash', function() use ($di) {
-    $flash = new \Anax\FlashMessage\CFlashMessage();
-    $flash->setDI($di);
-    return $flash;
-});
+
 
 $di->set('form', '\Mos\HTMLForm\CForm');
 
@@ -65,7 +61,6 @@ $app->navbar->configure(ANAX_APP_PATH . 'config/navbar_me.php');
 
 $app->theme->addStylesheet('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 $app->theme->addStylesheet('css/databasecomments.css');
-$app->theme->addStylesheet('css/flashmessage.css');
 
 
 
